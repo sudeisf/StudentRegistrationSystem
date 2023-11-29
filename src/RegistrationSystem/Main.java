@@ -9,8 +9,8 @@ public class Main extends Register {
 
 
         Scanner Input = new Scanner(System.in);
+        //checking if the user wants to add another user
         boolean addAnotherUser = true;
-
         while (addAnotherUser) {
             addUser(Input);
 
@@ -32,9 +32,8 @@ public class Main extends Register {
         try {
 
             
-            //Register register = new Register();
+            //getting the required prerequisite
             Department department = new Department();
-            //Table tb = new Table();
 
             System.out.println("Welcome to Haramaya university Registration System ");
             System.out.println();
@@ -93,7 +92,7 @@ public class Main extends Register {
             System.out.println();
             Courses.display_table();
 
-        }catch (InputMismatchException e){
+        }catch (InputMismatchException e){//adding exceptions
             System.out.println("Invalid Input : " + e.getMessage());
             Input.nextLine();
         }catch (NoSuchElementException N){
