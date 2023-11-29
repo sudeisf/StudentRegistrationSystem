@@ -40,5 +40,16 @@ static  void display_table() {
     System.out.println(".......................................................................................................................................");
     }
 }
+class CourseCheck extends Courses{
+    public static int Total_Array(int[][] array) {
+        int sum = 0;
+        for (int[] row : course_ECTS) {
+            for (int element : row) {
+                sum += element;
+            }
+        }
+        return sum;
+    }
+}
 
 
