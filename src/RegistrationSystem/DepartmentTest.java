@@ -8,7 +8,7 @@ public class DepartmentTest {
     @Test
     public void test(){
         Department department = new Department();
-        String result = department.choose_department(1);
+        String result = department.choose_department(0);
         assertEquals("Computer science",result);
     }
     
